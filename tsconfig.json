@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "hashtag-mention-col-lib": [
+        "dist/hashtag-mention-col-lib"
+      ],
+      "hashtag-mention-col-lib/*": [
+        "dist/hashtag-mention-col-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

@@ -44,3 +44,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+projects/hmc-tester/src/.prettierrc.json
+projects/hashtag-mention-col-lib/src/.prettierrc.json
