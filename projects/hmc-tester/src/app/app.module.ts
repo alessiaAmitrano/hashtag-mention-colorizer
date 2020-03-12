@@ -1,4 +1,4 @@
-import { HashtagMentionColLibModule } from 'hashtag-mention-col-lib';
+import { HashtagMentionColLibModule } from 'dist/hashtag-mention-col-lib';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

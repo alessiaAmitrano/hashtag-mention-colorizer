@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Pipe({
-  name: 'hashtagMentionColorizer'
+  name: 'hmColor'
 })
 export class HashtagMentionColorizerPipe implements PipeTransform {
   twitterColor = '#1ca1f3';
