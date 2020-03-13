@@ -1,27 +1,81 @@
-# HashtagMentionColorizerLib
+#Angular Hashtag and Mentions Colorizer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
+> A small library to detect and color mentions and hashtags in texts
 
-## Development server
+[![NPM Version][npm-image]][npm-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This library finds hashtags and mentions in a text and applies a chosen color to them.
 
-## Code scaffolding
+![](header.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+```sh
+npm install ng-hashtag-mention-colorizer --save
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Usage example
 
-## Running unit tests
+This library was developed to highlight hashtags and mentions in tweets coming from Twitter API. It can be used with every social network feed since it just takes a string as parameter and finds hashtags and mentions in it returning a copy of the same string with the found elements colored.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To use the functionality, add the library module to your app:
 
-## Running end-to-end tests
+```sh
+import { HashtagMentionColLibModule } from 'dist/hashtag-mention-col-lib';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+import { AppComponent } from './app.component';
 
-## Further help
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, HashtagMentionColLibModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+At this point, it is possible to use the pipe in our templates. ATTENTION: The pipe only works by passing the processed string to an HTML element throught the [innerHtml] property.
+
+It is possible to assign a custom color to ashtags and mentions. In case no color is defined, the library will use the default color #1ca1f3
+
+```sh
+<div class="container">
+  <span [innerHTML]="hashtag | hmColor"></span>
+  <span [innerHTML]="mention | hmColor: '#18BE63'"></span>
+</div>
+```
+
+## Release History
+
+- 1.0.0
+  - The first proper release
+- 0.0.1
+  - Work in progress
+
+## Meta
+
+Your Name – [@AlleAmitrano](https://twitter.com/AlleAmitrano) – alessia.amitranobo@gmail.com
+
+Distributed under the MIT license. See `LICENSE` for more information.
+
+[https://github.com/alessiaAmitrano/hashtag-mention-colorizer](https://github.com/alessiaAmitrano/hashtag-mention-colorizer)
+
+## Contributing
+
+1. Fork it (<https://github.com/alessiaAmitrano/hashtag-mention-colorizer>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+<!-- Markdown link & img dfn's -->
+
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/alessiaAmitrano/hashtag-mention-colorizer/wiki
