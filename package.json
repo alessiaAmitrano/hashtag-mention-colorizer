@@ -1,6 +1,6 @@
 {
   "name": "hashtag-mention-colorizer-lib",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,8 +9,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build_lib": "ng build hashtag-mention-col-lib",
+    "copy-license": "ncp ./projects/hashtag-mention-col-lib/LICENSE ./dist/hashtag-mention-col-lib",
+    "copy-readme": "ncp ./projects/hashtag-mention-col-lib/README.md ./dist/hashtag-mention-col-lib",
+    "copy-header": "ncp ./projects/hashtag-mention-col-lib/header.png ./dist/hashtag-mention-col-lib",
+    "copy-files": "npm run copy-license && npm run copy-readme && npm run copy-header",
     "npm_pack": "cd dist/hashtag-mention-col-lib && npm pack",
-    "package": "npm run build_lib && npm run npm_pack"
+    "package": "npm run build_lib && npm run copy-files && npm run npm_pack",
+    "publish": "npm publish dist/hashtag-mention-col-lib/hashtag-mention-colorizer-1.1.1.tgz"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +27,7 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "ncp": "^2.0.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
