@@ -7,7 +7,7 @@
 
 This library finds hashtags and mentions in a text and applies a chosen color to them.
 
-![](header.png)
+![](./projects/hashtag-mention-col-lib/header.png)
 
 ## Installation
 
