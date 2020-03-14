@@ -1,4 +1,13 @@
 <div class="container">
-  <span [innerHTML]="hashtag | hmColor"></span>
-  <span [innerHTML]="mention | hmColor: '#18BE63'"></span>
+  <article class="card">
+    <div class="header">
+      <img src="assets/me.png" alt="" />
+      <div class="header-text">
+        <span class="name">~AlleAmiDev~</span>
+        <span class="nickname">@AlessiaAmitrano</span>
+      </div>
+    </div>
+    <span [innerHTML]="text1 | hmColor"></span>
+    <span [innerHTML]="text2 | hmColor: '#18BE63'"></span>
+  </article>
 </div>

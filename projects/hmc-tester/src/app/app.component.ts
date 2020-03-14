@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  hashtag = '#hashtagPipe from';
-  mention = '@AlessiaAmitrano';
+  text1 =
+    'Hello! @AlessiaAmitrano here! Check out my amazing new #angular #library ! ';
+  text2 = '#frontend @devLifeUk #developers';
 }
