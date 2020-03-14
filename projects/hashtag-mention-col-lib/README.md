@@ -73,9 +73,9 @@ Distributed under the MIT license. See `LICENSE` for more information.
 
 <!-- Markdown link & img dfn's -->
 
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[npm-image]: https://img.shields.io/npm/v/hashtag-mention-colorizer.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/hashtag-mention-colorizer
+[npm-downloads]: https://img.shields.io/npm/dm/hashtag-mention-colorizer.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/hashtag-mention-colorizer/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/hashtag-mention-colorizer
 [wiki]: https://github.com/alessiaAmitrano/hashtag-mention-colorizer/wiki

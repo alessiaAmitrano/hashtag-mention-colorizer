@@ -1,6 +1,6 @@
 {
   "name": "hashtag-mention-colorizer-lib",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -15,7 +15,7 @@
     "copy-files": "npm run copy-license && npm run copy-readme && npm run copy-header",
     "npm_pack": "cd dist/hashtag-mention-col-lib && npm pack",
     "package": "npm run build_lib && npm run copy-files && npm run npm_pack",
-    "publish": "npm publish dist/hashtag-mention-col-lib/hashtag-mention-colorizer-1.1.1.tgz"
+    "publish": "npm publish dist/hashtag-mention-col-lib/hashtag-mention-colorizer-1.1.2.tgz"
   },
   "private": true,
   "dependencies": {

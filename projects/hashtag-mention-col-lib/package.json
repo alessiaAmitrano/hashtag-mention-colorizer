@@ -1,6 +1,6 @@
 {
   "name": "hashtag-mention-colorizer",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Simple Angular library to hilight mentions and hashtags",
   "keywords": [
     "Angular",
@@ -9,7 +9,7 @@
     "social",
     "twitter"
   ],
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/alessiaAmitrano/hashtag-mention-colorizer"
